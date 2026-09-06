@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pip &mdash; Cold-Pressed Juice</title>
+<meta name="description" content="Pip is a small-batch cold-pressed juice bar. Six juices, zero shortcuts.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,600;1,9..144,900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="Pip &mdash; home">
+      <svg class="logo-seed" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 4C27 12 32 19 32 25a12 12 0 0 1-24 0C8 19 13 12 20 4Z" fill="var(--yellow)" stroke="var(--ink)" stroke-width="2.5"/>
+        <path d="M20 10c3 5 6 9.5 6 13" fill="none" stroke="var(--ink)" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-word">Pip</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-small btn-ink" href="#menu">See the menu</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="sunburst" aria-hidden="true"></div>
+
+    <div class="wrap hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow eyebrow-light">Small-batch &middot; est. this year</p>
+        <h1 class="hero-title">
+          Fresh&#8209;pressed.<br>
+          <span class="accent-italic">Pip</span> to pour.
+        </h1>
+        <p class="hero-sub">
+          Six juices, one hydraulic press, zero added sugar. We wash the fruit,
+          we press the fruit, we get out of the way.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#menu">See the menu</a>
+          <a class="btn btn-outline-light" href="#visit">Find a stand</a>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="slice-wrap slice-wrap--hero">
+          <svg class="slice slice--hero" viewBox="0 0 120 120" aria-hidden="true" style="--fruit: var(--orange);">
+            <circle cx="60" cy="60" r="58" fill="var(--fruit)" opacity="0.18"/>
+            <circle cx="60" cy="60" r="50" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>
+            <g stroke="var(--ink)" stroke-width="1">
+              <path d="M60,60 L106,60 A46,46 0 0 1 92.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/>
+              <path d="M60,60 L92.5,92.5 A46,46 0 0 1 60,106 Z" fill="var(--fruit)" opacity="0.6"/>
+              <path d="M60,60 L60,106 A46,46 0 0 1 27.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/>
+              <path d="M60,60 L27.5,92.5 A46,46 0 0 1 14,60 Z" fill="var(--fruit)" opacity="0.6"/>
+              <path d="M60,60 L14,60 A46,46 0 0 1 27.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/>
+              <path d="M60,60 L27.5,27.5 A46,46 0 0 1 60,14 Z" fill="var(--fruit)" opacity="0.6"/>
+              <path d="M60,60 L60,14 A46,46 0 0 1 92.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/>
+              <path d="M60,60 L92.5,27.5 A46,46 0 0 1 106,60 Z" fill="var(--fruit)" opacity="0.6"/>
+            </g>
+            <circle cx="60" cy="60" r="58" fill="none" stroke="var(--ink)" stroke-width="3"/>
+            <g fill="var(--ink)">
+              <ellipse cx="78" cy="58" rx="3" ry="5" transform="rotate(30 78 58)"/>
+              <ellipse cx="48" cy="76" rx="3" ry="5" transform="rotate(-40 48 76)"/>
+              <ellipse cx="66" cy="40" rx="3" ry="5" transform="rotate(60 66 40)"/>
+            </g>
+          </svg>
+          <svg class="drip" viewBox="0 0 24 40" aria-hidden="true"><path d="M12 0C12 0 24 20 24 29a12 12 0 0 1-24 0C0 20 12 0 12 0Z" fill="var(--orange)" stroke="var(--ink)" stroke-width="2.5"/></svg>
+        </div>
+
+        <span class="stamp stamp--1">Cold&#8209;pressed</span>
+        <span class="stamp stamp--2">Small batch</span>
+        <span class="stamp stamp--3">0g added sugar</span>
+      </div>
+    </div>
+
+    <svg class="scallop scallop--dark" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,0 H1200 V20 Q1185,40 1170,20 Q1155,0 1140,20 Q1125,40 1110,20 Q1095,0 1080,20 Q1065,40 1050,20 Q1035,0 1020,20 Q1005,40 990,20 Q975,0 960,20 Q945,40 930,20 Q915,0 900,20 Q885,40 870,20 Q855,0 840,20 Q825,40 810,20 Q795,0 780,20 Q765,40 750,20 Q735,0 720,20 Q705,40 690,20 Q675,0 660,20 Q645,40 630,20 Q615,0 600,20 Q585,40 570,20 Q555,0 540,20 Q525,40 510,20 Q495,0 480,20 Q465,40 450,20 Q435,0 420,20 Q405,40 390,20 Q375,0 360,20 Q345,40 330,20 Q315,0 300,20 Q285,40 270,20 Q255,0 240,20 Q225,40 210,20 Q195,0 180,20 Q165,40 150,20 Q135,0 120,20 Q105,40 90,20 Q75,0 60,20 Q45,40 30,20 Q15,0 0,20 Z" fill="var(--paper)"/>
+    </svg>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="menu-section" id="menu">
+    <div class="wrap">
+      <p class="eyebrow">Today&rsquo;s press</p>
+      <h2 class="section-title">Six juices. Zero shortcuts.</h2>
+      <p class="section-lede">
+        Every bottle starts as whole fruit and vegetables, cold-pressed within
+        hours of picking. Nothing added, nothing hiding.
+      </p>
+
+      <div class="card-grid">
+
+        <article class="juice-card reveal">
+          <svg class="slice" viewBox="0 0 120 120" aria-hidden="true" style="--fruit: var(--orange);">
+            <circle cx="60" cy="60" r="58" fill="var(--fruit)" opacity="0.18"/>
+            <circle cx="60" cy="60" r="50" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>
+            <g><path d="M60,60 L106,60 A46,46 0 0 1 92.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L92.5,92.5 A46,46 0 0 1 60,106 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L60,106 A46,46 0 0 1 27.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L27.5,92.5 A46,46 0 0 1 14,60 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L14,60 A46,46 0 0 1 27.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L27.5,27.5 A46,46 0 0 1 60,14 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L60,14 A46,46 0 0 1 92.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L92.5,27.5 A46,46 0 0 1 106,60 Z" fill="var(--fruit)" opacity="0.6"/></g>
+            <circle cx="60" cy="60" r="58" fill="none" stroke="var(--ink)" stroke-width="3"/>
+          </svg>
+          <h3>Sunrise Run</h3>
+          <p class="ingredients">Orange &middot; carrot &middot; ginger &middot; turmeric</p>
+          <p class="flavor-note">Wakes up faster than your alarm.</p>
+          <span class="price-stamp">$8</span>
+        </article>
+
+        <article class="juice-card reveal">
+          <svg class="slice" viewBox="0 0 120 120" aria-hidden="true" style="--fruit: var(--lime);">
+            <circle cx="60" cy="60" r="58" fill="var(--fruit)" opacity="0.18"/>
+            <circle cx="60" cy="60" r="50" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>
+            <g><path d="M60,60 L106,60 A46,46 0 0 1 92.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L92.5,92.5 A46,46 0 0 1 60,106 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L60,106 A46,46 0 0 1 27.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L27.5,92.5 A46,46 0 0 1 14,60 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L14,60 A46,46 0 0 1 27.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L27.5,27.5 A46,46 0 0 1 60,14 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L60,14 A46,46 0 0 1 92.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L92.5,27.5 A46,46 0 0 1 106,60 Z" fill="var(--fruit)" opacity="0.6"/></g>
+            <circle cx="60" cy="60" r="58" fill="none" stroke="var(--ink)" stroke-width="3"/>
+          </svg>
+          <h3>Green Pip</h3>
+          <p class="ingredients">Apple &middot; celery &middot; cucumber &middot; lime &middot; mint</p>
+          <p class="flavor-note">The one that actually tastes like green.</p>
+          <span class="price-stamp">$9</span>
+        </article>
+
+        <article class="juice-card reveal">
+          <svg class="slice" viewBox="0 0 120 120" aria-hidden="true" style="--fruit: var(--pink);">
+            <circle cx="60" cy="60" r="58" fill="var(--fruit)" opacity="0.18"/>
+            <circle cx="60" cy="60" r="50" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>
+            <g><path d="M60,60 L106,60 A46,46 0 0 1 92.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L92.5,92.5 A46,46 0 0 1 60,106 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L60,106 A46,46 0 0 1 27.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L27.5,92.5 A46,46 0 0 1 14,60 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L14,60 A46,46 0 0 1 27.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L27.5,27.5 A46,46 0 0 1 60,14 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L60,14 A46,46 0 0 1 92.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L92.5,27.5 A46,46 0 0 1 106,60 Z" fill="var(--fruit)" opacity="0.6"/></g>
+            <circle cx="60" cy="60" r="58" fill="none" stroke="var(--ink)" stroke-width="3"/>
+          </svg>
+          <h3>Ruby Root</h3>
+          <p class="ingredients">Beet &middot; apple &middot; ginger &middot; lemon</p>
+          <p class="flavor-note">Earthy, sweet, a little defiant.</p>
+          <span class="price-stamp">$8</span>
+        </article>
+
+        <article class="juice-card reveal">
+          <svg class="slice" viewBox="0 0 120 120" aria-hidden="true" style="--fruit: var(--yellow);">
+            <circle cx="60" cy="60" r="58" fill="var(--fruit)" opacity="0.18"/>
+            <circle cx="60" cy="60" r="50" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>
+            <g><path d="M60,60 L106,60 A46,46 0 0 1 92.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L92.5,92.5 A46,46 0 0 1 60,106 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L60,106 A46,46 0 0 1 27.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L27.5,92.5 A46,46 0 0 1 14,60 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L14,60 A46,46 0 0 1 27.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L27.5,27.5 A46,46 0 0 1 60,14 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L60,14 A46,46 0 0 1 92.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L92.5,27.5 A46,46 0 0 1 106,60 Z" fill="var(--fruit)" opacity="0.6"/></g>
+            <circle cx="60" cy="60" r="58" fill="none" stroke="var(--ink)" stroke-width="3"/>
+          </svg>
+          <h3>Tropic Bloom</h3>
+          <p class="ingredients">Pineapple &middot; mango &middot; orange &middot; lime</p>
+          <p class="flavor-note">Vacation, bottled.</p>
+          <span class="price-stamp">$9</span>
+        </article>
+
+        <article class="juice-card reveal">
+          <svg class="slice" viewBox="0 0 120 120" aria-hidden="true" style="--fruit: var(--pink);">
+            <circle cx="60" cy="60" r="58" fill="var(--fruit)" opacity="0.18"/>
+            <circle cx="60" cy="60" r="50" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>
+            <g><path d="M60,60 L106,60 A46,46 0 0 1 92.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L92.5,92.5 A46,46 0 0 1 60,106 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L60,106 A46,46 0 0 1 27.5,92.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L27.5,92.5 A46,46 0 0 1 14,60 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L14,60 A46,46 0 0 1 27.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L27.5,27.5 A46,46 0 0 1 60,14 Z" fill="var(--fruit)" opacity="0.6"/><path d="M60,60 L60,14 A46,46 0 0 1 92.5,27.5 Z" fill="var(--fruit)" opacity="0.9"/><path d="M60,60 L92.5,27.5 A46,46 0 0 1 106,60 Z" fill="var(--fruit)" opacity="0.6"/></g>
+            <circle cx="60" cy="60" r="58" fill="none" stroke="var(--ink)" stroke-width="3"/>
+          </svg>
+          <h3>Watermelon Sunset</h3>
+          <p class="ingredients">Watermelon &middot; strawberry &middot; lime &middot; basil</p>
+          <p class="flavor-note">Summer&rsquo;s whole personality.</p>
+          <span class="price-stamp">$8</span>
+        </article>
+
+        <article class="juice-card reveal">
+          <svg class="slice" viewBox="0 0 120 120" aria-hidden="true" style="--fruit: var(--ink); --fruit-op: 0.5;">
+            <circle cx="60" cy="60" r="58" fill="var(--fruit)" opacity="0.12"/>
+            <circle cx="60" cy="60" r="50" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>
+            <g><path d="M60,60 L106,60 A46,46 0 0 1 92.5,92.5 Z" fill="var(--fruit)" opacity="0.7"/><path d="M60,60 L92.5,92.5 A46,46 0 0 1 60,106 Z" fill="var(--fruit)" opacity="0.4"/><path d="M60,60 L60,106 A46,46 0 0 1 27.5,92.5 Z" fill="var(--fruit)" opacity="0.7"/><path d="M60,60 L27.5,92.5 A46,46 0 0 1 14,60 Z" fill="var(--fruit)" opacity="0.4"/><path d="M60,60 L14,60 A46,46 0 0 1 27.5,27.5 Z" fill="var(--fruit)" opacity="0.7"/><path d="M60,60 L27.5,27.5 A46,46 0 0 1 60,14 Z" fill="var(--fruit)" opacity="0.4"/><path d="M60,60 L60,14 A46,46 0 0 1 92.5,27.5 Z" fill="var(--fruit)" opacity="0.7"/><path d="M60,60 L92.5,27.5 A46,46 0 0 1 106,60 Z" fill="var(--fruit)" opacity="0.4"/></g>
+            <circle cx="60" cy="60" r="58" fill="none" stroke="var(--ink)" stroke-width="3"/>
+          </svg>
+          <h3>Charcoal Citrus</h3>
+          <p class="ingredients">Grapefruit &middot; lemon &middot; activated charcoal &middot; agave</p>
+          <p class="flavor-note">Bitter, black, unbothered.</p>
+          <span class="price-stamp">$9</span>
+        </article>
+
+      </div>
+    </div>
+
+    <svg class="scallop" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,0 H1200 V20 Q1185,40 1170,20 Q1155,0 1140,20 Q1125,40 1110,20 Q1095,0 1080,20 Q1065,40 1050,20 Q1035,0 1020,20 Q1005,40 990,20 Q975,0 960,20 Q945,40 930,20 Q915,0 900,20 Q885,40 870,20 Q855,0 840,20 Q825,40 810,20 Q795,0 780,20 Q765,40 750,20 Q735,0 720,20 Q705,40 690,20 Q675,0 660,20 Q645,40 630,20 Q615,0 600,20 Q585,40 570,20 Q555,0 540,20 Q525,40 510,20 Q495,0 480,20 Q465,40 450,20 Q435,0 420,20 Q405,40 390,20 Q375,0 360,20 Q345,40 330,20 Q315,0 300,20 Q285,40 270,20 Q255,0 240,20 Q225,40 210,20 Q195,0 180,20 Q165,40 150,20 Q135,0 120,20 Q105,40 90,20 Q75,0 60,20 Q45,40 30,20 Q15,0 0,20 Z" fill="var(--lime)"/>
+    </svg>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about-section" id="about">
+    <div class="wrap about-inner">
+      <div class="about-copy reveal">
+        <p class="eyebrow">Our story</p>
+        <h2 class="section-title">We press.<br>You pip.</h2>
+        <p>
+          Pip started with one juicer, one farmers&rsquo; market stall, and a
+          hydraulic press we bought secondhand and did not entirely know how
+          to use. These days it&rsquo;s still small-batch, still cold-pressed,
+          still sourced from growers we can call by name. No pasteurizing,
+          no powders, no shortcuts &mdash; just fruit, pressure, and a
+          deliberately short shelf life.
+        </p>
+        <ol class="process-list">
+          <li><span class="process-num">01</span><div><strong>Wash</strong><p>Every piece, by hand, the same day it&rsquo;s picked.</p></div></li>
+          <li><span class="process-num">02</span><div><strong>Press</strong><p>Cold hydraulic press &mdash; no heat, no oxidation.</p></div></li>
+          <li><span class="process-num">03</span><div><strong>Bottle</strong><p>Glass, capped, into the fridge within the hour.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="about-art reveal" aria-hidden="true">
+        <svg class="crate" viewBox="0 0 260 260">
+          <rect x="30" y="150" width="200" height="90" rx="4" fill="var(--paper)" stroke="var(--ink)" stroke-width="3"/>
+          <rect x="30" y="150" width="200" height="18" fill="var(--orange)" stroke="var(--ink)" stroke-width="3"/>
+          <line x1="30" y1="205" x2="230" y2="205" stroke="var(--ink)" stroke-width="2" opacity="0.4"/>
+          <line x1="70" y1="168" x2="70" y2="240" stroke="var(--ink)" stroke-width="2" opacity="0.3"/>
+          <line x1="190" y1="168" x2="190" y2="240" stroke="var(--ink)" stroke-width="2" opacity="0.3"/>
+          <circle cx="90" cy="120" r="34" fill="var(--orange)" stroke="var(--ink)" stroke-width="3"/>
+          <circle cx="150" cy="100" r="28" fill="var(--pink)" stroke="var(--ink)" stroke-width="3"/>
+          <circle cx="180" cy="140" r="24" fill="var(--yellow)" stroke="var(--ink)" stroke-width="3"/>
+          <circle cx="120" cy="150" r="20" fill="var(--lime)" stroke="var(--ink)" stroke-width="3"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="visit-section" id="visit">
+    <div class="sunburst sunburst--visit" aria-hidden="true"></div>
+    <div class="wrap visit-inner">
+      <div class="reveal">
+        <p class="eyebrow eyebrow-light">Come find the press</p>
+        <h2 class="section-title section-title--light">Visit the stand</h2>
+
+        <dl class="visit-details">
+          <div>
+            <dt>Address</dt>
+            <dd>118 Orchard Street<br>corner of 5th &amp; Elm</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Mon&ndash;Fri, 7am&ndash;4pm<br>Sat&ndash;Sun, 8am&ndash;3pm</dd>
+          </div>
+          <div>
+            <dt>Say hello</dt>
+            <dd><a href="mailto:hello@pipjuice.co">hello@pipjuice.co</a><br>(555) 019&ndash;7743</dd>
+          </div>
+        </dl>
+        <p class="placeholder-note">*Sample address &amp; hours &mdash; swap in your real details.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <svg class="seal" viewBox="0 0 140 140" aria-hidden="true">
+      <defs>
+        <path id="sealCurve" d="M 70,70 m -52,0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0"/>
+      </defs>
+      <circle cx="70" cy="70" r="62" fill="none" stroke="var(--paper)" stroke-width="1.5" opacity="0.5"/>
+      <circle cx="70" cy="70" r="38" fill="none" stroke="var(--paper)" stroke-width="1.5" opacity="0.5"/>
+      <text font-family="'Space Mono', monospace" font-size="10" letter-spacing="3" fill="var(--paper)">
+        <textPath href="#sealCurve" startOffset="0%">PIP &middot; COLD-PRESSED &middot; SMALL BATCH &middot; </textPath>
+      </text>
+      <path d="M70 50c5 7 9 13 9 17a9 9 0 0 1-18 0c0-4 4-10 9-17Z" fill="var(--orange)" stroke="var(--paper)" stroke-width="1.5"/>
+    </svg>
+
+    <div class="footer-col">
+      <p class="footer-word">Pip</p>
+      <p class="footer-tag">Cold-pressed. Pip to pour.</p>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <div class="footer-col footer-social">
+      <a href="#">Instagram</a>
+      <a href="#">Newsletter</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 Pip Juice Co. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
