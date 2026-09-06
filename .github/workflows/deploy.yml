@@ -1,0 +1,30 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Deploy to Netlify (production)
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          # Site ID is not secret — it's the public project id for pip-juice-co.
+          NETLIFY_SITE_ID: 244da411-e6e1-4253-9c52-ac15679cc147
+        run: >
+          npx --yes netlify-cli@26 deploy
+          --prod
+          --dir .
+          --no-build
+          --message "Deploy ${{ github.sha }}"
