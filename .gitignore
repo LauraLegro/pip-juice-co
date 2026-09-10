@@ -10,5 +10,8 @@ Thumbs.db
 # Netlify
 .netlify/
 
+# Local dev-server config (machine/session-specific absolute paths)
+.claude/launch.json
+
 # Node (in case tooling is added later)
 node_modules/
